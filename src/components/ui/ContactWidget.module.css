@@ -1,0 +1,308 @@
+.fab {
+  position: fixed;
+  bottom: var(--sp-6);
+  right: var(--sp-6);
+  z-index: 90;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  color: var(--white);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.fab:hover {
+  transform: scale(1.08);
+  background: var(--navy-light);
+}
+
+.fabChat {
+  position: fixed;
+  bottom: var(--sp-6);
+  right: calc(var(--sp-6) + 72px);
+  z-index: 90;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  color: var(--white);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.fabChat:hover {
+  transform: scale(1.08);
+  background: var(--navy-light);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(19, 27, 46, 0.4);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: var(--sp-6);
+}
+
+.panel {
+  width: 100%;
+  max-width: 320px;
+  background: var(--white);
+  border: 2px solid var(--navy);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  animation: slideUp 0.25s ease;
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-4) var(--sp-5);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--navy);
+  border-bottom: 1px solid var(--outline);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-5);
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid rgba(198, 198, 205, 0.4);
+  transition: background 0.2s ease;
+}
+
+.listItem:hover {
+  background: var(--surface);
+}
+
+.listItemPrimary {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.listItemPrimary:hover {
+  background: var(--navy-light);
+}
+
+.closeBtn {
+  width: 100%;
+  padding: var(--sp-4);
+  background: var(--navy);
+  color: var(--white);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.closeBtn:hover {
+  background: var(--navy-light);
+}
+
+.chatPanel {
+  position: fixed;
+  bottom: calc(var(--sp-6) + 72px);
+  right: calc(var(--sp-6) + 72px);
+  z-index: 100;
+  width: 360px;
+  height: 480px;
+  background: var(--white);
+  border: 2px solid var(--navy);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.25s ease;
+}
+
+.chatHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-4) var(--sp-5);
+  background: var(--navy);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.chatHeaderInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.chatCloseBtn {
+  background: transparent;
+  color: var(--white);
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatCloseBtn:hover {
+  opacity: 1;
+}
+
+.chatMessages {
+  flex: 1;
+  padding: var(--sp-4);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  background: var(--surface);
+}
+
+.message {
+  max-width: 85%;
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.userMessage {
+  align-self: flex-end;
+  background: var(--navy);
+  color: var(--white);
+  border-bottom-right-radius: 0;
+}
+
+.modelMessage {
+  align-self: flex-start;
+  background: var(--white);
+  color: var(--text-primary);
+  border: 1px solid var(--outline);
+  border-bottom-left-radius: 0;
+}
+
+.chatInputForm {
+  display: flex;
+  border-top: 1px solid var(--outline);
+  background: var(--white);
+  padding: var(--sp-3);
+  gap: var(--sp-2);
+}
+
+.chatInput {
+  flex: 1;
+  padding: var(--sp-2) var(--sp-4);
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-full);
+  outline: none;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+
+.chatInput:focus {
+  border-color: var(--navy);
+}
+
+.chatSubmitBtn {
+  background: var(--navy);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-full);
+  padding: var(--sp-2) var(--sp-5);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.chatSubmitBtn:hover {
+  background: var(--navy-light);
+}
+
+.chatSubmitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.typingIndicator {
+  align-self: flex-start;
+  background: var(--white);
+  color: var(--text-secondary);
+  border: 1px solid var(--outline);
+  padding: var(--sp-2) var(--sp-4);
+  border-radius: var(--radius-md);
+  border-bottom-left-radius: 0;
+  font-size: 0.8125rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--text-secondary);
+  border-radius: 50%;
+  display: inline-block;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.dot:nth-child(1) { animation-delay: -0.32s; }
+.dot:nth-child(2) { animation-delay: -0.16s; }
+.dot:nth-child(3) { animation-delay: 0s; }
+
+@keyframes bounce {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1.0); }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .overlay {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .panel {
+    max-width: calc(100% - var(--sp-8));
+  }
+
+  .chatPanel {
+    bottom: var(--sp-4);
+    right: var(--sp-4);
+    left: var(--sp-4);
+    width: auto;
+    height: calc(100% - var(--sp-8) - 80px);
+  }
+}

@@ -1,0 +1,55 @@
+.footer {
+  background: var(--navy);
+  color: rgba(255, 255, 255, 0.85);
+  padding: var(--sp-12) 0 var(--sp-8);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-6);
+  text-align: center;
+}
+
+.brandName {
+  font-family: var(--font-headline);
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.brandAccent {
+  color: var(--cyan);
+}
+
+.tagline {
+  margin-top: var(--sp-2);
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-4) var(--sp-6);
+}
+
+.link {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--cyan);
+}
+
+.copy {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: var(--sp-4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}

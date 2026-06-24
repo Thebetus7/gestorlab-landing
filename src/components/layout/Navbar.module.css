@@ -1,0 +1,131 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--nav-height);
+  background: var(--navy);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  height: var(--nav-height);
+  gap: var(--sp-4);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  color: var(--white);
+  font-family: var(--font-headline);
+  font-weight: 700;
+  font-size: 1.0625rem;
+  flex-shrink: 0;
+}
+
+.logo strong {
+  font-weight: 800;
+  color: var(--cyan);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-1);
+  margin: 0 auto;
+}
+
+.navLink {
+  padding: var(--sp-2) var(--sp-3);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.navLinkActive {
+  color: var(--white);
+  background: rgba(0, 188, 212, 0.2);
+}
+
+.loginBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-4);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.loginBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: auto;
+  padding: var(--sp-2);
+}
+
+.menuToggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+}
+
+@media (max-width: 1024px) {
+  .menuToggle {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--navy);
+    padding: var(--sp-4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    gap: var(--sp-2);
+  }
+
+  .navOpen {
+    display: flex;
+  }
+
+  .navLink {
+    width: 100%;
+    padding: var(--sp-3) var(--sp-4);
+  }
+
+  .loginBtn {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .logo span {
+    font-size: 0.9375rem;
+  }
+}

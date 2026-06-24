@@ -1,0 +1,68 @@
+.section {
+  background: var(--surface);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--sp-8);
+  align-items: start;
+}
+
+.detailsCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.detailCard {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-4);
+  padding: var(--sp-5);
+}
+
+.detailIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background: rgba(0, 188, 212, 0.12);
+  color: var(--cyan);
+  border-radius: var(--radius-md);
+}
+
+.detailLabel {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: var(--sp-1);
+}
+
+.detailValue {
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.formCard {
+  padding: var(--sp-8);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .formCard {
+    padding: var(--sp-6);
+  }
+}
