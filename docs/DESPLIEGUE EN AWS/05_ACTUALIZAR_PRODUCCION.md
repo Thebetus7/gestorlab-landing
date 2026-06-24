@@ -172,4 +172,6 @@ docker system prune -f
 
 ---
 
+> **Siguiente paso:** [06_APAGAR_SERVICIOS.md](./06_APAGAR_SERVICIOS.md)  
 > **Volver al índice:** [00_RESUMEN_GENERAL.md](./00_RESUMEN_GENERAL.md)
+

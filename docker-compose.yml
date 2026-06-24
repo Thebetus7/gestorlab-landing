@@ -1,0 +1,11 @@
+services:
+  landing:
+    build: .
+    container_name: gestorlab_landing
+    restart: always
+    ports:
+      - "80:3000"  # El puerto 80 del servidor se mapea al 3000 de Next.js
+    environment:
+      - NODE_ENV=production
+      - BACKEND_API_URL=http://18.221.224.13
+      - GEMINI_API_KEY=AQ.Ab8RN6KPh8t7gcgKpzhHXVLPQMMHevE3dPAq5fAizrd_2I8vuA

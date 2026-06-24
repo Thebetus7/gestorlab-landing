@@ -25,6 +25,9 @@ Esta guía explica **paso a paso** cómo desplegar la landing page de **GestorLa
 │                              ↓                                      │
 │ 6. ACTUALIZAR (cada vez que haya cambios)                           │
 │    git push → SSH → git pull → docker-compose up --build            │
+│                              ↓                                      │
+│ 7. APAGAR SERVICIOS (Evitar facturación)                             │
+│    Detener/Terminar instancia y liberar recursos asociados          │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -75,6 +78,8 @@ El chatbot utiliza la API de **Gemini 2.5 Flash** de Google para generar respues
 | `03_CONFIGURAR_PROYECTO.md` | Archivos del proyecto: Dockerfile, docker-compose.yml, variables de entorno |
 | `04_DESPLEGAR_Y_VERIFICAR.md` | Clonar, construir, levantar y comprobar que funciona |
 | `05_ACTUALIZAR_PRODUCCION.md` | Flujo para subir cambios nuevos desde tu PC al servidor |
+| `06_APAGAR_SERVICIOS.md` | Detener/terminar recursos para evitar cobros de AWS |
+
 
 ---
 

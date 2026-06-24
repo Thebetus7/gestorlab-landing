@@ -35,6 +35,7 @@ cd gestorlab-landing
 
 **Verifica que el contenido está correcto:**
 ```bash
+pwd
 ls
 ```
 
