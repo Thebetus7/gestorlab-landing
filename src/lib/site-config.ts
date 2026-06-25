@@ -59,7 +59,7 @@ export const siteConfig = {
     title: "Productos",
     subtitle: "Soluciones diseñadas para transformar tu operación",
     flagship: {
-      name: "NEXACORE",
+      name: "GestorLab",
       description:
         "Plataforma integral para la gestión de laboratorios de cómputo: inventario, reservas, actividades, incidencias y control de personal en un solo lugar.",
       image:

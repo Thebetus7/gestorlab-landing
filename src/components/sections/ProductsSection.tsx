@@ -32,7 +32,7 @@ export function ProductsSection() {
               rel="noopener noreferrer"
               className="btn btnPrimary"
             >
-              Acceder a GestorLab
+              Acceder
             </a>
           </div>
         </div>

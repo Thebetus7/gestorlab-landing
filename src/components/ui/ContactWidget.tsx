@@ -91,11 +91,11 @@ export function ContactWidget() {
           setOpen(false); // Cerrar contacto si se abre chat
         }}
       >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
-          <path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5.5z" />
-          <path d="m19 17 1 2.5 2.5.5-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z" />
-        </svg>
+        <img
+          src="/chat-icon.png"
+          alt="Chatbot de IA"
+          className={styles.chatIconImg}
+        />
       </button>
 
       {/* Ventana de Chatbot */}
@@ -103,11 +103,11 @@ export function ContactWidget() {
         <div className={styles.chatPanel}>
           <div className={styles.chatHeader}>
             <div className={styles.chatHeaderInfo}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
-                <path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5.5z" />
-                <path d="m19 17 1 2.5 2.5.5-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z" />
-              </svg>
+              <img
+                src="/chat-icon.png"
+                alt="Asistente virtual"
+                className={styles.chatHeaderIconImg}
+              />
               <span>Asistente IA</span>
             </div>
             <button
