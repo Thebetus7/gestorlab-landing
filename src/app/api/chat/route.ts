@@ -50,7 +50,7 @@ export async function POST(req: Request) {
       const controller = new AbortController();
       const id = setTimeout(() => controller.abort(), 3500);
 
-      const backendUrl = process.env.BACKEND_API_URL || "http://localhost:8000";
+      const backendUrl = process.env.BACKEND_API_URL || "http://18.221.224.13";
       const contextRes = await fetch(
         `${backendUrl}/api/laboratorio/chatbot/context/`,
         {
