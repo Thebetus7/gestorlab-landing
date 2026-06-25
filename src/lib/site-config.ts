@@ -59,7 +59,7 @@ export const siteConfig = {
     title: "Productos",
     subtitle: "Soluciones diseñadas para transformar tu operación",
     flagship: {
-      name: "GestorLab",
+      name: "NEXACORE",
       description:
         "Plataforma integral para la gestión de laboratorios de cómputo: inventario, reservas, actividades, incidencias y control de personal en un solo lugar.",
       image:
@@ -128,7 +128,7 @@ export const siteConfig = {
   project: {
     title: "¿Listo para digitalizar tu laboratorio?",
     subtitle:
-      "Accede a GestorLab y comienza a gestionar equipos, reservas e incidencias con precisión absoluta.",
+      "Accede a NEXACORE y comienza a gestionar equipos, reservas e incidencias con precisión absoluta.",
     cta: "Comenzar Proyecto",
   },
 
@@ -143,7 +143,7 @@ export const siteConfig = {
       },
       {
         label: "Teléfono",
-        value: "+591 6333-2108",
+        value: "+591 7738-9330",
         icon: "phone" as const,
       },
       {
@@ -161,17 +161,17 @@ export const siteConfig = {
       title: "Contáctanos directamente:",
       whatsapp: [
         {
-          label: "+591 63332108",
-          href: "https://wa.me/59163332108",
+          label: "Edberto Ybanera: +591 77389330",
+          href: "https://wa.me/59177389330",
           primary: true,
         },
         {
-          label: "+591 72474541",
-          href: "https://wa.me/59172474541",
+          label: "Juan Noe Jarpa: +591 71064272",
+          href: "https://wa.me/59171064272",
           primary: false,
         },
       ],
-      emails: ["cayoeben64@gmail.com", "nielsroy8@gmail.com"],
+      emails: ["edybanera@gmail.com", "juan.noe.jarpa.18@gmail.com"],
     },
   },
 
