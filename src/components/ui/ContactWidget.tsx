@@ -13,7 +13,7 @@ export function ContactWidget() {
   const [open, setOpen] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'model', content: '¡Hola! Soy el asistente virtual de GestorLab. ¿Qué deseas consultar hoy?' }
+    { role: 'model', content: '¡Hola! Soy el asistente virtual de NexaCore. ¿Qué deseas consultar hoy?' }
   ]);
   const [inputText, setInputText] = useState('');
   const [loading, setLoading] = useState(false);
@@ -150,7 +150,7 @@ export function ContactWidget() {
               type="text"
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
-              placeholder="Pregúntame sobre laboratorios, capacidad, etc..."
+              placeholder="Preguntame..."
               className={styles.chatInput}
               disabled={loading}
             />
